@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cal_grid {
+  background: rgb(1, 1, 8);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 8px;
+  justify-items: center;
+  grid-row-gap: 3px;
+  padding: 12px;
+  padding-top: 60px;
+  position: relative;
+}
+
+button {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  background: rgb(87, 139, 161);
+}
+button:nth-child(17) {
+  grid-row: span 3;
+  height: 100%;
+}
+input {
+  outline: none;
+  grid-column: span 4;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: right;
+  background: rgb(206, 206, 206);
+  font-family: sans-serif;
+  font-size: 18px;
+}
+/* #cal_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  rgb(2, 2, 3);
+  width: 300px;
+  height: 350;
+  padding: 20px;
+} */
+.dig{
+  height: 60px;
+  width: 9px;
+  background: rgb(10, 2, 85);
+  position:absolute;
+  border-top-right-radius: 500%;
+  border-bottom-right-radius: 500%;
+}
+#dig_1{
+  left: 0px;
+  top: 55%;
+}
+#dig_2{
+  transform: rotatey(180deg);
+  right: 0px;
+  top: 55%;
+}
